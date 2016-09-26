@@ -1,0 +1,171 @@
+{
+configs: {
+	800 :{
+		deviceType: atcmd.ATDevice,
+		id:800,
+		name:[AT0,AT1.1],
+		properties : ["com.oracle.atcmd.emulation=true"],
+		},
+	1 :{
+		deviceType: gpio.GPIOPin,
+		id:1,
+		pinNumber:4,
+		name:[GPIO4,GPIO0.4,GPIO_0],
+		},
+	2 :{
+		deviceType: gpio.GPIOPin,
+		id:2,
+		pinNumber:7,
+		name:[GPIO7,GPIO0.7,GPIO_1],
+		mode:4,
+		direction:1,
+		},
+	3 :{
+		deviceType: gpio.GPIOPin,
+		id:3,
+		pinNumber:17,
+		name:[GPIO17,GPIO0.17,GPIO_2],
+		},
+	4 :{
+		deviceType: gpio.GPIOPin,
+		id:4,
+		pinNumber:18,
+		name:[GPIO18,GPIO0.18,GPIO_3],
+		mode:4,
+		direction:1,
+		},
+	5 :{
+		deviceType: gpio.GPIOPin,
+		id:5,
+		pinNumber:22,
+		name:[GPIO22,GPIO0.22,GPIO_4],
+		},
+	6 :{
+		deviceType: gpio.GPIOPin,
+		id:6,
+		pinNumber:23,
+		name:[GPIO23,GPIO0.23,GPIO_5],
+		mode:4,
+		direction:1,
+		},
+	7 :{
+		deviceType: gpio.GPIOPin,
+		id:7,
+		pinNumber:24,
+		name:[GPIO24,GPIO0.24,GPIO_6],
+		mode:4,
+		direction:1,
+		},
+	8 :{
+		deviceType: gpio.GPIOPin,
+		id:8,
+		pinNumber:25,
+		name:[GPIO25,GPIO0.25,GPIO_7],
+		mode:4,
+		direction:1,
+		},
+	9 :{
+		deviceType: gpio.GPIOPin,
+		id:9,
+		pinNumber:27,
+		name:[GPIO27,GPIO0.27,GPIO_8],
+		},
+	900 :{
+		deviceType: mmio.MMIODevice,
+			id:900,
+			name:[PWM,MMIO0],
+			byteOrdering:little,
+			address:0x2020C000,
+			size:28,
+			memConfigs : [
+			{
+				type:REGISTER_TYPE_INT,
+				offset:0,
+				name:CTL,
+			},
+			{
+				type:REGISTER_TYPE_INT,
+				offset:4,
+				name:STA,
+			},
+			{
+				type:REGISTER_TYPE_INT,
+				offset:16,
+				name:RNG1,
+			},
+			{
+				type:REGISTER_TYPE_INT,
+				offset:20,
+				name:DAT1,
+			},
+			{
+				type:REGISTER_TYPE_INT,
+				offset:24,
+				name:FIF1,
+			},
+		]
+			
+			
+			
+			
+			},
+	300 :{
+		deviceType: spibus.SPIDevice,
+	id:300,
+	name:[SPI0.0,SPI0],
+	controllerNumber:0,
+    address:0,
+    csActive:0,
+    wordLength:8,
+    clockFrequency:2000000,
+    clockMode:1,
+    bitOrdering:1,
+	},
+	100 :{
+		deviceType: uart.UART,
+	id:100,
+	controllerName:ttyAMA0,
+	name:[ttyAMA0,UART0],
+	baudRate:19200,
+	dataBits:8,
+	parity:0,
+	stopBits:1,
+	flowControl:0,
+	},
+	1100 :{
+		deviceType: watchdog.WatchdogTimer,
+		id:1100,
+		name:[WDG0,WATCHDOG0],
+		timerNumber:1,
+		},
+	1101 :{
+		deviceType: watchdog.WindowedWatchdogTimer,
+		id:1101,
+		name:[WWDG0,WWATCHDOG0],
+		timerNumber:2,
+		},
+	},
+defaults: {
+	atcmd.ATDevice: {
+		deviceNumber:1,
+		channelNumber:1,
+	},
+		gpio.GPIOPin: {
+			initValue:0,
+			controllerNumber:0,
+			direction:0,
+			mode:1,
+			trigger:0,
+		},
+		mmio.MMIODevice: {
+		},
+		uart.UART: {
+	baudRate:19200,
+	parity:0,
+	dataBits:8,
+	stopBits:1,
+	flowControl:0,
+},
+		
+}
+}

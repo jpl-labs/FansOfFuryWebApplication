@@ -1,0 +1,930 @@
+Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T10:41:47-06:00)
+Maven home: /opt/apache-maven-3.3.9
+Java version: 1.8.0_65, vendor: Oracle Corporation
+Java home: /usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre
+Default locale: en_US, platform encoding: UTF-8
+OS name: "linux", version: "4.4.13-v7+", arch: "arm", family: "unix"
+[DEBUG] Created new class realm maven.api
+[DEBUG] Importing foreign packages into class realm maven.api
+[DEBUG]   Imported: javax.enterprise.inject.* < plexus.core
+[DEBUG]   Imported: javax.enterprise.util.* < plexus.core
+[DEBUG]   Imported: javax.inject.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.artifact < plexus.core
+[DEBUG]   Imported: org.apache.maven.classrealm < plexus.core
+[DEBUG]   Imported: org.apache.maven.cli < plexus.core
+[DEBUG]   Imported: org.apache.maven.configuration < plexus.core
+[DEBUG]   Imported: org.apache.maven.exception < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution < plexus.core
+[DEBUG]   Imported: org.apache.maven.execution.scope < plexus.core
+[DEBUG]   Imported: org.apache.maven.lifecycle < plexus.core
+[DEBUG]   Imported: org.apache.maven.model < plexus.core
+[DEBUG]   Imported: org.apache.maven.monitor < plexus.core
+[DEBUG]   Imported: org.apache.maven.plugin < plexus.core
+[DEBUG]   Imported: org.apache.maven.profiles < plexus.core
+[DEBUG]   Imported: org.apache.maven.project < plexus.core
+[DEBUG]   Imported: org.apache.maven.reporting < plexus.core
+[DEBUG]   Imported: org.apache.maven.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.rtinfo < plexus.core
+[DEBUG]   Imported: org.apache.maven.settings < plexus.core
+[DEBUG]   Imported: org.apache.maven.toolchain < plexus.core
+[DEBUG]   Imported: org.apache.maven.usability < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.* < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authentication < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.authorization < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.events < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.observers < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.proxy < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.repository < plexus.core
+[DEBUG]   Imported: org.apache.maven.wagon.resource < plexus.core
+[DEBUG]   Imported: org.codehaus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.* < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.classworlds < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.component < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.configuration < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.container < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.context < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.lifecycle < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.logging < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.personality < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.Xpp3Dom < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParser < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlPullParserException < plexus.core
+[DEBUG]   Imported: org.codehaus.plexus.util.xml.pull.XmlSerializer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.* < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.artifact < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.collection < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.deployment < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.graph < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.installation < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.internal.impl < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.metadata < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.repository < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.resolution < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.spi < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.transfer < plexus.core
+[DEBUG]   Imported: org.eclipse.aether.version < plexus.core
+[DEBUG]   Imported: org.slf4j.* < plexus.core
+[DEBUG]   Imported: org.slf4j.helpers.* < plexus.core
+[DEBUG]   Imported: org.slf4j.spi.* < plexus.core
+[DEBUG] Populating class realm maven.api
+[INFO] Error stacktraces are turned on.
+[DEBUG] Reading global settings from /opt/apache-maven-3.3.9/conf/settings.xml
+[DEBUG] Reading user settings from /home/pi/.m2/settings.xml
+[DEBUG] Reading global toolchains from /opt/apache-maven-3.3.9/conf/toolchains.xml
+[DEBUG] Reading user toolchains from /home/pi/.m2/toolchains.xml
+[DEBUG] Using local repository at /home/pi/.m2/repository
+[DEBUG] Using manager EnhancedLocalRepositoryManager with priority 10.0 for /home/pi/.m2/repository
+[INFO] Scanning for projects...
+[DEBUG] Extension realms for project com.sperkins.mindwave:mindwave-bluetooth:jar:0.0.1-SNAPSHOT: (none)
+[DEBUG] Looking up lifecyle mappings for packaging jar from ClassRealm[plexus.core, parent: null]
+[DEBUG] === REACTOR BUILD PLAN ================================================
+[DEBUG] Project: com.sperkins.mindwave:mindwave-bluetooth:jar:0.0.1-SNAPSHOT
+[DEBUG] Tasks:   [clean, install]
+[DEBUG] Style:   Regular
+[DEBUG] =======================================================================
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building mindwave-bluetooth 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] Lifecycle default -> [validate, initialize, generate-sources, process-sources, generate-resources, process-resources, compile, process-classes, generate-test-sources, process-test-sources, generate-test-resources, process-test-resources, test-compile, process-test-classes, test, prepare-package, package, pre-integration-test, integration-test, post-integration-test, verify, install, deploy]
+[DEBUG] Lifecycle clean -> [pre-clean, clean, post-clean]
+[DEBUG] Lifecycle site -> [pre-site, site, post-site, site-deploy]
+[DEBUG] === PROJECT BUILD PLAN ================================================
+[DEBUG] Project:       com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT
+[DEBUG] Dependencies (collect): []
+[DEBUG] Dependencies (resolve): [compile, runtime, test]
+[DEBUG] Repositories (dependencies): [oss.sonatype.org (http://oss.sonatype.org/content/repositories/releases, default, releases+snapshots), oss.sonatype.org-snapshot (http://oss.sonatype.org/content/repositories/snapshots, default, releases+snapshots), central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] Repositories (plugins)     : [central (https://repo.maven.apache.org/maven2, default, releases)]
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-clean-plugin:2.5:clean (default-clean)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <directory default-value="${project.build.directory}"/>
+  <excludeDefaultDirectories default-value="false">${clean.excludeDefaultDirectories}</excludeDefaultDirectories>
+  <failOnError default-value="true">${maven.clean.failOnError}</failOnError>
+  <followSymLinks default-value="false">${clean.followSymLinks}</followSymLinks>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <reportDirectory default-value="${project.reporting.outputDirectory}"/>
+  <retryOnError default-value="true">${maven.clean.retryOnError}</retryOnError>
+  <skip default-value="false">${clean.skip}</skip>
+  <testOutputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <verbose>${clean.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:resources (default-resources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.resources}"/>
+  <session default-value="${session}"/>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.3:compile (default-compile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.compileClasspathElements}"/>
+  <compileSourceRoots default-value="${project.compileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedSourcesDirectory default-value="${project.build.directory}/generated-sources/annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.outputDirectory}"/>
+  <project default-value="${project}"/>
+  <projectArtifact default-value="${project.artifact}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skipMain>${maven.main.skip}</skipMain>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.7</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.7</target>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-resources-plugin:2.6:testResources (default-testResources)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <buildFilters default-value="${project.build.filters}"/>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <escapeString>${maven.resources.escapeString}</escapeString>
+  <escapeWindowsPaths default-value="true">${maven.resources.escapeWindowsPaths}</escapeWindowsPaths>
+  <includeEmptyDirs default-value="false">${maven.resources.includeEmptyDirs}</includeEmptyDirs>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <overwrite default-value="false">${maven.resources.overwrite}</overwrite>
+  <project default-value="${project}"/>
+  <resources default-value="${project.testResources}"/>
+  <session default-value="${session}"/>
+  <skip>${maven.test.skip}</skip>
+  <supportMultiLineFiltering default-value="false">${maven.resources.supportMultiLineFiltering}</supportMultiLineFiltering>
+  <useBuildFilters default-value="true"/>
+  <useDefaultDelimiters default-value="true"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-compiler-plugin:3.3:testCompile (default-testCompile)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <basedir default-value="${basedir}"/>
+  <buildDirectory default-value="${project.build.directory}"/>
+  <classpathElements default-value="${project.testClasspathElements}"/>
+  <compileSourceRoots default-value="${project.testCompileSourceRoots}"/>
+  <compilerId default-value="javac">${maven.compiler.compilerId}</compilerId>
+  <compilerReuseStrategy default-value="${reuseCreated}">${maven.compiler.compilerReuseStrategy}</compilerReuseStrategy>
+  <compilerVersion>${maven.compiler.compilerVersion}</compilerVersion>
+  <debug default-value="true">${maven.compiler.debug}</debug>
+  <debuglevel>${maven.compiler.debuglevel}</debuglevel>
+  <encoding default-value="${project.build.sourceEncoding}">${encoding}</encoding>
+  <executable>${maven.compiler.executable}</executable>
+  <failOnError default-value="true">${maven.compiler.failOnError}</failOnError>
+  <forceJavacCompilerUse default-value="false">${maven.compiler.forceJavacCompilerUse}</forceJavacCompilerUse>
+  <fork default-value="false">${maven.compiler.fork}</fork>
+  <generatedTestSourcesDirectory default-value="${project.build.directory}/generated-test-sources/test-annotations"/>
+  <maxmem>${maven.compiler.maxmem}</maxmem>
+  <meminitial>${maven.compiler.meminitial}</meminitial>
+  <mojoExecution default-value="${mojoExecution}"/>
+  <optimize default-value="false">${maven.compiler.optimize}</optimize>
+  <outputDirectory default-value="${project.build.testOutputDirectory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <showDeprecation default-value="false">${maven.compiler.showDeprecation}</showDeprecation>
+  <showWarnings default-value="false">${maven.compiler.showWarnings}</showWarnings>
+  <skip>${maven.test.skip}</skip>
+  <skipMultiThreadWarning default-value="false">${maven.compiler.skipMultiThreadWarning}</skipMultiThreadWarning>
+  <source default-value="1.5">1.7</source>
+  <staleMillis default-value="0">${lastModGranularityMs}</staleMillis>
+  <target default-value="1.5">1.7</target>
+  <testSource>${maven.compiler.testSource}</testSource>
+  <testTarget>${maven.compiler.testTarget}</testTarget>
+  <useIncrementalCompilation default-value="true">${maven.compiler.useIncrementalCompilation}</useIncrementalCompilation>
+  <verbose default-value="false">${maven.compiler.verbose}</verbose>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test (default-test)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <argLine>${argLine}</argLine>
+  <basedir default-value="${basedir}"/>
+  <childDelegation default-value="false">${childDelegation}</childDelegation>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <debugForkedProcess>${maven.surefire.debug}</debugForkedProcess>
+  <disableXmlReport default-value="false">${disableXmlReport}</disableXmlReport>
+  <enableAssertions default-value="true">${enableAssertions}</enableAssertions>
+  <excludedGroups>${excludedGroups}</excludedGroups>
+  <failIfNoSpecifiedTests>${surefire.failIfNoSpecifiedTests}</failIfNoSpecifiedTests>
+  <failIfNoTests>${failIfNoTests}</failIfNoTests>
+  <forkMode default-value="once">${forkMode}</forkMode>
+  <forkedProcessTimeoutInSeconds>${surefire.timeout}</forkedProcessTimeoutInSeconds>
+  <groups>${groups}</groups>
+  <junitArtifactName default-value="junit:junit">${junitArtifactName}</junitArtifactName>
+  <jvm>${jvm}</jvm>
+  <localRepository default-value="${localRepository}"/>
+  <objectFactory>${objectFactory}</objectFactory>
+  <parallel>${parallel}</parallel>
+  <parallelMavenExecution default-value="${session.parallel}"/>
+  <perCoreThreadCount default-value="true">${perCoreThreadCount}</perCoreThreadCount>
+  <pluginArtifactMap>${plugin.artifactMap}</pluginArtifactMap>
+  <pluginDescriptor default-value="${plugin}"/>
+  <printSummary default-value="true">${surefire.printSummary}</printSummary>
+  <projectArtifactMap>${project.artifactMap}</projectArtifactMap>
+  <redirectTestOutputToFile default-value="false">${maven.test.redirectTestOutputToFile}</redirectTestOutputToFile>
+  <remoteRepositories default-value="${project.pluginArtifactRepositories}"/>
+  <reportFormat default-value="brief">${surefire.reportFormat}</reportFormat>
+  <reportNameSuffix default-value="">${surefire.reportNameSuffix}</reportNameSuffix>
+  <reportsDirectory default-value="${project.build.directory}/surefire-reports"/>
+  <runOrder default-value="filesystem"/>
+  <skip default-value="false">${maven.test.skip}</skip>
+  <skipExec>${maven.test.skip.exec}</skipExec>
+  <skipTests default-value="false">${skipTests}</skipTests>
+  <test>${test}</test>
+  <testClassesDirectory default-value="${project.build.testOutputDirectory}"/>
+  <testFailureIgnore default-value="false">${maven.test.failure.ignore}</testFailureIgnore>
+  <testNGArtifactName default-value="org.testng:testng">${testNGArtifactName}</testNGArtifactName>
+  <testSourceDirectory default-value="${project.build.testSourceDirectory}"/>
+  <threadCount>${threadCount}</threadCount>
+  <trimStackTrace default-value="true">${trimStackTrace}</trimStackTrace>
+  <useFile default-value="true">${surefire.useFile}</useFile>
+  <useManifestOnlyJar default-value="true">${surefire.useManifestOnlyJar}</useManifestOnlyJar>
+  <useSystemClassLoader default-value="true">${surefire.useSystemClassLoader}</useSystemClassLoader>
+  <useUnlimitedThreads default-value="false">${useUnlimitedThreads}</useUnlimitedThreads>
+  <workingDirectory>${basedir}</workingDirectory>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-jar-plugin:2.4:jar (default-jar)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <classesDirectory default-value="${project.build.outputDirectory}"/>
+  <defaultManifestFile default-value="${project.build.outputDirectory}/META-INF/MANIFEST.MF"/>
+  <finalName default-value="${project.build.finalName}">${jar.finalName}</finalName>
+  <forceCreation default-value="false">${jar.forceCreation}</forceCreation>
+  <outputDirectory default-value="${project.build.directory}"/>
+  <project default-value="${project}"/>
+  <session default-value="${session}"/>
+  <skipIfEmpty default-value="false">${jar.skipIfEmpty}</skipIfEmpty>
+  <useDefaultManifestFile default-value="false">${jar.useDefaultManifestFile}</useDefaultManifestFile>
+</configuration>
+[DEBUG] -----------------------------------------------------------------------
+[DEBUG] Goal:          org.apache.maven.plugins:maven-install-plugin:2.4:install (default-install)
+[DEBUG] Style:         Regular
+[DEBUG] Configuration: <?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <artifact default-value="${project.artifact}"/>
+  <attachedArtifacts default-value="${project.attachedArtifacts}"/>
+  <createChecksum default-value="false">${createChecksum}</createChecksum>
+  <localRepository>${localRepository}</localRepository>
+  <packaging default-value="${project.packaging}"/>
+  <pomFile default-value="${project.file}"/>
+  <skip default-value="false">${maven.install.skip}</skip>
+  <updateReleaseInfo default-value="false">${updateReleaseInfo}</updateReleaseInfo>
+</configuration>
+[DEBUG] =======================================================================
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl-arm:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/releases was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl-arm:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org-snapshot has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl-arm:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/releases was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl-arm:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org-snapshot has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/releases was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org-snapshot has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/releases was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org has elapsed or updates are forced
+[DEBUG] Failure to find net.sf.bluecove:bluecove-gpl:2.1.1-SNAPSHOT/maven-metadata.xml in http://oss.sonatype.org/content/repositories/snapshots was cached in the local repository, resolution will not be reattempted until the update interval of oss.sonatype.org-snapshot has elapsed or updates are forced
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3, ConflictMarker.markTime=1, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=2, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=13, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=102, DefaultDependencyCollector.transformTime=28}
+[DEBUG] com.sperkins.mindwave:mindwave-bluetooth:jar:0.0.1-SNAPSHOT
+[DEBUG]    net.sf.bluecove:bluecove-gpl-arm:jar:2.1.1-SNAPSHOT:compile
+[DEBUG]    net.sf.bluecove:bluecove-gpl:jar:2.1.1-SNAPSHOT:compile
+[DEBUG]    org.slf4j:slf4j-api:jar:1.7.21:compile
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ mindwave-bluetooth ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=0, ConflictMarker.markTime=0, ConflictMarker.nodeCount=3, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=3, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=1, ConflictResolver.conflictItemCount=3, DefaultDependencyCollector.collectTime=69, DefaultDependencyCollector.transformTime=1}
+[DEBUG] org.apache.maven.plugins:maven-clean-plugin:jar:2.5:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-clean-plugin:2.5
+[DEBUG]   Included: org.apache.maven.plugins:maven-clean-plugin:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-clean-plugin:2.5:clean from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-clean-plugin:2.5, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-clean-plugin:2.5:clean' with basic configurator -->
+[DEBUG]   (f) directory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target
+[DEBUG]   (f) excludeDefaultDirectories = false
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) followSymLinks = false
+[DEBUG]   (f) outputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG]   (f) reportDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/site
+[DEBUG]   (f) retryOnError = true
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) testOutputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/test-classes
+[DEBUG] -- end configuration --
+[INFO] Deleting /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/main/resources/log4j.properties
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/main/resources
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/main
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/MindwaveSerialPacket$1.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/BluetoothSocket.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/BluetoothServiceUuids.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/MindwaveSerialPacket.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/BluetoothConnector$BluetoothDeviceDiscoveryListener.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/BluetoothSocket$BluetoothStreamParseThread.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/BluetoothConnector.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket/BluetoothConnection.class
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/socket
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/EventType.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/BlinkEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/RawEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/HeadsetStatusEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/MindwaveEventListener.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/EegEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/PoorSignalEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/Event.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/MeditationEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/AttentionEvent.class
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event/AbstractEvent.class
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/event
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave/Util.class
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins/mindwave
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com/sperkins
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/com
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/mindwave-bluetooth-0.0.1-SNAPSHOT.jar
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-archiver/pom.properties
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-archiver
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+[INFO] Deleting file /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-status/maven-compiler-plugin/compile/default-compile
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-status/maven-compiler-plugin/compile
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-status/maven-compiler-plugin
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/maven-status
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources
+[INFO] Deleting directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target
+[DEBUG] Skipping non-existing directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG] Skipping non-existing directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/test-classes
+[DEBUG] Skipping non-existing directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/site
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ mindwave-bluetooth ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=2, ConflictMarker.markTime=1, ConflictMarker.nodeCount=77, ConflictIdSorter.graphTime=2, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=26, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14, ConflictResolver.conflictItemCount=74, DefaultDependencyCollector.collectTime=357, DefaultDependencyCollector.transformTime=19}
+[DEBUG] org.apache.maven.plugins:maven-resources-plugin:jar:2.6:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]       commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]       junit:junit:jar:3.8.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:2.0.5:compile
+[DEBUG]    org.apache.maven.shared:maven-filtering:jar:1.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-build-api:jar:0.0.4:compile
+[DEBUG]    org.codehaus.plexus:plexus-interpolation:jar:1.13:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-resources-plugin:2.6
+[DEBUG]   Included: org.apache.maven.plugins:maven-resources-plugin:jar:2.6
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:2.0.5
+[DEBUG]   Included: org.apache.maven.shared:maven-filtering:jar:1.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-build-api:jar:0.0.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.13
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:resources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:resources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT @ /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src, PatternSet [includes: {}, excludes: {**/*.java}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@232e55
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/resources.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/rt.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/jsse.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/jce.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/charsets.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/jfr.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/classes, env.PWD=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_65-b17, user.name=pi, env._=/opt/apache-maven-3.3.9/bin/mvn, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T10:41:47-06:00), env.USER=pi, env.SHELL=/bin/bash, env.SSH_TTY=/dev/pts/0, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/opt/apache-maven-3.3.9/bin, user.language=en, sun.boot.library.path=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/arm, classworlds.conf=/opt/apache-maven-3.3.9/bin/m2.conf, env.SSH_CONNECTION=169.254.43.167 39262 169.254.10.244 22, java.version=1.8.0_65, env.SSH_CLIENT=169.254.43.167 39262 22, user.timezone=US/Central, sun.arch.data.model=32, java.endorsed.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre, java.vm.info=mixed mode, env.LOGNAME=pi, os.version=4.4.13-v7+, path.separator=:, java.vm.version=25.65-b01, env.JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/pi, env.OLDPWD=/home/pi/projects/fof/latest-spring-app, java.specification.vendor=Oracle Corporation, env.COMP_WORDBREAKS= 	
+"'><;|&(:, env.M2_HOME=/opt/apache-maven-3.3.9, java.library.path=/usr/java/packages/lib/arm:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS= -X clean install, java.vm.vendor=Oracle Corporation, maven.home=/opt/apache-maven-3.3.9, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X clean install, java.class.path=/opt/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar, env.XDG_SESSION_ID=c3, maven.version=3.3.9, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/home/pi, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth, os.arch=arm, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/ext:/usr/java/packages/lib/ext, env.XDG_RUNTIME_DIR=/run/user/1000, user.dir=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, sun.arch.abi=gnueabihf, env.MAIL=/var/mail/pi, file.encoding=UTF-8, java.specification.version=1.8, env.MAVEN_PROJECTBASEDIR=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src
+excludes [**/*.java]
+includes []
+[DEBUG] ignoreDelta true
+[INFO] Copying 1 resource
+[DEBUG] file log4j.properties has a filtered file extension
+[DEBUG] copy /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/main/resources/log4j.properties to /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/main/resources/log4j.properties
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:compile (default-compile) @ mindwave-bluetooth ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3, ConflictMarker.markTime=1, ConflictMarker.nodeCount=143, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=44, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=14, ConflictResolver.conflictItemCount=73, DefaultDependencyCollector.collectTime=629, DefaultDependencyCollector.transformTime=20}
+[DEBUG] org.apache.maven.plugins:maven-compiler-plugin:jar:3.3:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.2.1:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:1.5.15:compile
+[DEBUG]    org.apache.maven:maven-core:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.2.1:compile
+[DEBUG]          org.codehaus.plexus:plexus-interpolation:jar:1.11:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.2.1:compile
+[DEBUG]       org.slf4j:slf4j-jdk14:jar:1.5.6:runtime
+[DEBUG]          org.slf4j:slf4j-api:jar:1.5.6:runtime
+[DEBUG]       org.slf4j:jcl-over-slf4j:jar:1.5.6:runtime
+[DEBUG]       org.apache.maven:maven-profile:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-project:jar:2.2.1:compile
+[DEBUG]          org.apache.maven:maven-plugin-registry:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.2.1:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.2.1:compile
+[DEBUG]          backport-util-concurrent:backport-util-concurrent:jar:3.1:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.2.1:compile
+[DEBUG]       org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile
+[DEBUG]          org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.2.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-utils:jar:0.7:compile
+[DEBUG]       com.google.code.findbugs:jsr305:jar:2.0.1:compile
+[DEBUG]    org.apache.maven.shared:maven-shared-incremental:jar:1.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-api:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-manager:jar:2.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-compiler-javac:jar:2.5:runtime
+[DEBUG]    org.codehaus.plexus:plexus-container-default:jar:1.5.5:compile
+[DEBUG]       org.codehaus.plexus:plexus-classworlds:jar:2.2.2:compile
+[DEBUG]       org.apache.xbean:xbean-reflect:jar:3.4:compile
+[DEBUG]          log4j:log4j:jar:1.2.12:compile
+[DEBUG]          commons-logging:commons-logging-api:jar:1.1:compile
+[DEBUG]       com.google.collections:google-collections:jar:1.0:compile
+[DEBUG]       junit:junit:jar:3.8.2:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.3
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.3
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-compiler-plugin:3.3
+[DEBUG]   Included: org.apache.maven.plugins:maven-compiler-plugin:jar:3.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:1.5.15
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.11
+[DEBUG]   Included: org.slf4j:slf4j-jdk14:jar:1.5.6
+[DEBUG]   Included: org.slf4j:jcl-over-slf4j:jar:1.5.6
+[DEBUG]   Included: backport-util-concurrent:backport-util-concurrent:jar:3.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-utils:jar:0.7
+[DEBUG]   Included: com.google.code.findbugs:jsr305:jar:2.0.1
+[DEBUG]   Included: org.apache.maven.shared:maven-shared-incremental:jar:1.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-component-annotations:jar:1.5.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-api:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-manager:jar:2.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-compiler-javac:jar:2.5
+[DEBUG]   Included: org.apache.xbean:xbean-reflect:jar:3.4
+[DEBUG]   Included: log4j:log4j:jar:1.2.12
+[DEBUG]   Included: commons-logging:commons-logging-api:jar:1.1
+[DEBUG]   Included: com.google.collections:google-collections:jar:1.0
+[DEBUG]   Included: junit:junit:jar:3.8.2
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.3:compile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.3, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.3:compile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth
+[DEBUG]   (f) buildDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target
+[DEBUG]   (f) classpathElements = [/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes, /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl-arm/2.1.1-SNAPSHOT/bluecove-gpl-arm-2.1.1-SNAPSHOT.jar, /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl/2.1.1-SNAPSHOT/bluecove-gpl-2.1.1-SNAPSHOT.jar, /home/pi/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedSourcesDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.3:compile {execution: default-compile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG]   (f) project = MavenProject: com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT @ /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (f) projectArtifact = com.sperkins.mindwave:mindwave-bluetooth:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@232e55
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.7
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.7
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[DEBUG] Source directories: [/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src]
+[DEBUG] Classpath: [/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+ /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl-arm/2.1.1-SNAPSHOT/bluecove-gpl-arm-2.1.1-SNAPSHOT.jar
+ /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl/2.1.1-SNAPSHOT/bluecove-gpl-2.1.1-SNAPSHOT.jar
+ /home/pi/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar]
+[DEBUG] Output directory: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG] Adding /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations to compile source roots:
+  /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src
+[DEBUG] New compile source roots:
+  /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src
+  /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations
+[DEBUG] CompilerReuseStrategy: reuseCreated
+[DEBUG] useIncrementalCompilation enabled
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/BlinkEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/PoorSignalEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothServiceUuids.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/MindwaveSerialPacket.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/AttentionEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/MindwaveEventListener.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothConnection.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/AbstractEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/EventType.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/EegEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/RawEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/Util.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/HeadsetStatusEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/MeditationEvent.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/Event.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothConnector.java
+[DEBUG] Stale source detected: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothSocket.java
+[INFO] Changes detected - recompiling the module!
+[DEBUG] Classpath:
+[DEBUG]  /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG]  /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl-arm/2.1.1-SNAPSHOT/bluecove-gpl-arm-2.1.1-SNAPSHOT.jar
+[DEBUG]  /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl/2.1.1-SNAPSHOT/bluecove-gpl-2.1.1-SNAPSHOT.jar
+[DEBUG]  /home/pi/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar
+[DEBUG] Source roots:
+[DEBUG]  /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src
+[DEBUG]  /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations
+[DEBUG] Command line options:
+[DEBUG] -d /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes -classpath /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes:/home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl-arm/2.1.1-SNAPSHOT/bluecove-gpl-arm-2.1.1-SNAPSHOT.jar:/home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl/2.1.1-SNAPSHOT/bluecove-gpl-2.1.1-SNAPSHOT.jar:/home/pi/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar: -sourcepath /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src:/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations: -s /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-sources/annotations -g -nowarn -target 1.7 -source 1.7
+[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
+[DEBUG] incrementalBuildHelper#beforeRebuildExecution
+[INFO] Compiling 17 source files to /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG] incrementalBuildHelper#afterRebuildExecution
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ mindwave-bluetooth ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-resources-plugin:2.6:testResources from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-resources-plugin:2.6, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-resources-plugin:2.6:testResources' with basic configurator -->
+[DEBUG]   (f) buildFilters = []
+[DEBUG]   (f) escapeWindowsPaths = true
+[DEBUG]   (s) includeEmptyDirs = false
+[DEBUG]   (s) outputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/test-classes
+[DEBUG]   (s) overwrite = false
+[DEBUG]   (f) project = MavenProject: com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT @ /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (s) resources = [Resource {targetPath: null, filtering: false, FileSet {directory: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/test/resources, PatternSet [includes: {}, excludes: {}]}}]
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@232e55
+[DEBUG]   (f) supportMultiLineFiltering = false
+[DEBUG]   (f) useBuildFilters = true
+[DEBUG]   (s) useDefaultDelimiters = true
+[DEBUG] -- end configuration --
+[DEBUG] properties used {java.vendor=Oracle Corporation, sun.java.launcher=SUN_STANDARD, sun.management.compiler=HotSpot Client Compiler, os.name=Linux, sun.boot.class.path=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/resources.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/rt.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/sunrsasign.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/jsse.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/jce.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/charsets.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/jfr.jar:/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/classes, env.PWD=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth, env.LANG=en_US.UTF-8, java.vm.specification.vendor=Oracle Corporation, java.runtime.version=1.8.0_65-b17, user.name=pi, env._=/opt/apache-maven-3.3.9/bin/mvn, maven.build.version=Apache Maven 3.3.9 (bb52d8502b132ec0a5a3f4c09453c07478323dc5; 2015-11-10T10:41:47-06:00), env.USER=pi, env.SHELL=/bin/bash, env.SSH_TTY=/dev/pts/0, env.NLSPATH=/usr/dt/lib/nls/msg/%L/%N.cat, env.PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/games:/usr/games:/opt/apache-maven-3.3.9/bin, user.language=en, sun.boot.library.path=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/arm, classworlds.conf=/opt/apache-maven-3.3.9/bin/m2.conf, env.SSH_CONNECTION=169.254.43.167 39262 169.254.10.244 22, java.version=1.8.0_65, env.SSH_CLIENT=169.254.43.167 39262 22, user.timezone=US/Central, sun.arch.data.model=32, java.endorsed.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/endorsed, sun.cpu.isalist=, sun.jnu.encoding=UTF-8, file.encoding.pkg=sun.io, env.SHLVL=1, file.separator=/, java.specification.name=Java Platform API Specification, java.class.version=52.0, org.slf4j.simpleLogger.defaultLogLevel=debug, user.country=US, java.home=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre, java.vm.info=mixed mode, env.LOGNAME=pi, os.version=4.4.13-v7+, path.separator=:, java.vm.version=25.65-b01, env.JAVA_HOME=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt, java.awt.printerjob=sun.print.PSPrinterJob, env.TERM=xterm-256color, sun.io.unicode.encoding=UnicodeLittle, awt.toolkit=sun.awt.X11.XToolkit, user.home=/home/pi, env.OLDPWD=/home/pi/projects/fof/latest-spring-app, java.specification.vendor=Oracle Corporation, env.COMP_WORDBREAKS= 	
+"'><;|&(:, env.M2_HOME=/opt/apache-maven-3.3.9, java.library.path=/usr/java/packages/lib/arm:/lib:/usr/lib, java.vendor.url=http://java.oracle.com/, env.MAVEN_CMD_LINE_ARGS= -X clean install, java.vm.vendor=Oracle Corporation, maven.home=/opt/apache-maven-3.3.9, java.runtime.name=Java(TM) SE Runtime Environment, sun.java.command=org.codehaus.plexus.classworlds.launcher.Launcher -X clean install, java.class.path=/opt/apache-maven-3.3.9/boot/plexus-classworlds-2.5.2.jar, env.XDG_SESSION_ID=c3, maven.version=3.3.9, env.XFILESEARCHPATH=/usr/dt/app-defaults/%L/Dt, java.vm.specification.name=Java Virtual Machine Specification, java.vm.specification.version=1.8, sun.cpu.endian=little, sun.os.patch.level=unknown, env.HOME=/home/pi, env.LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.axa=00;36:*.oga=00;36:*.spx=00;36:*.xspf=00;36:, java.io.tmpdir=/tmp, java.vendor.url.bug=http://bugreport.sun.com/bugreport/, maven.multiModuleProjectDirectory=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth, os.arch=arm, java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment, java.ext.dirs=/usr/lib/jvm/jdk-8-oracle-arm32-vfp-hflt/jre/lib/ext:/usr/java/packages/lib/ext, env.XDG_RUNTIME_DIR=/run/user/1000, user.dir=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth, line.separator=
+, java.vm.name=Java HotSpot(TM) Client VM, sun.arch.abi=gnueabihf, env.MAIL=/var/mail/pi, file.encoding=UTF-8, java.specification.version=1.8, env.MAVEN_PROJECTBASEDIR=/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth}
+[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+[DEBUG] resource with targetPath null
+directory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/test/resources
+excludes []
+includes []
+[INFO] skip non existing resourceDirectory /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/test/resources
+[DEBUG] no use filter components
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.3:testCompile (default-testCompile) @ mindwave-bluetooth ---
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-compiler-plugin:3.3:testCompile from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-compiler-plugin:3.3, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-compiler-plugin:3.3:testCompile' with basic configurator -->
+[DEBUG]   (f) basedir = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth
+[DEBUG]   (f) buildDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target
+[DEBUG]   (f) classpathElements = [/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/test-classes, /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes, /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl-arm/2.1.1-SNAPSHOT/bluecove-gpl-arm-2.1.1-SNAPSHOT.jar, /home/pi/.m2/repository/net/sf/bluecove/bluecove-gpl/2.1.1-SNAPSHOT/bluecove-gpl-2.1.1-SNAPSHOT.jar, /home/pi/.m2/repository/org/slf4j/slf4j-api/1.7.21/slf4j-api-1.7.21.jar]
+[DEBUG]   (f) compileSourceRoots = [/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/test/java]
+[DEBUG]   (f) compilerId = javac
+[DEBUG]   (f) debug = true
+[DEBUG]   (f) failOnError = true
+[DEBUG]   (f) forceJavacCompilerUse = false
+[DEBUG]   (f) fork = false
+[DEBUG]   (f) generatedTestSourcesDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/generated-test-sources/test-annotations
+[DEBUG]   (f) mojoExecution = org.apache.maven.plugins:maven-compiler-plugin:3.3:testCompile {execution: default-testCompile}
+[DEBUG]   (f) optimize = false
+[DEBUG]   (f) outputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/test-classes
+[DEBUG]   (f) project = MavenProject: com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT @ /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@232e55
+[DEBUG]   (f) showDeprecation = false
+[DEBUG]   (f) showWarnings = false
+[DEBUG]   (f) skipMultiThreadWarning = false
+[DEBUG]   (f) source = 1.7
+[DEBUG]   (f) staleMillis = 0
+[DEBUG]   (f) target = 1.7
+[DEBUG]   (f) useIncrementalCompilation = true
+[DEBUG]   (f) verbose = false
+[DEBUG] -- end configuration --
+[DEBUG] Using compiler 'javac'.
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ mindwave-bluetooth ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=3, ConflictMarker.markTime=1, ConflictMarker.nodeCount=132, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=27, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=5, ConflictResolver.conflictItemCount=77, DefaultDependencyCollector.collectTime=519, DefaultDependencyCollector.transformTime=11}
+[DEBUG] org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile
+[DEBUG]       org.apache.maven.surefire:surefire-api:jar:2.12.4:compile
+[DEBUG]    org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile
+[DEBUG]       org.apache.commons:commons-lang3:jar:3.1:compile
+[DEBUG]       org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.8:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.9:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-model:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.9:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:test
+[DEBUG]    org.apache.maven:maven-core:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile
+[DEBUG]       org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile
+[DEBUG]       org.apache.maven:maven-monitor:jar:2.0.9:compile
+[DEBUG]       classworlds:classworlds:jar:1.1:compile
+[DEBUG]    org.apache.maven:maven-toolchain:jar:2.0.9:compile
+[DEBUG]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-surefire-plugin:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-booter:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:surefire-api:jar:2.12.4
+[DEBUG]   Included: org.apache.maven.surefire:maven-surefire-common:jar:2.12.4
+[DEBUG]   Included: org.apache.commons:commons-lang3:jar:3.1
+[DEBUG]   Included: org.apache.maven.shared:maven-common-artifact-filters:jar:1.3
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.8
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.9
+[DEBUG]   Included: org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-surefire-plugin:2.12.4, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test' with basic configurator -->
+[DEBUG]   (s) basedir = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth
+[DEBUG]   (s) childDelegation = false
+[DEBUG]   (s) classesDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG]   (s) disableXmlReport = false
+[DEBUG]   (s) enableAssertions = true
+[DEBUG]   (s) forkMode = once
+[DEBUG]   (s) junitArtifactName = junit:junit
+[DEBUG]   (s) localRepository =       id: local
+      url: file:///home/pi/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) parallelMavenExecution = false
+[DEBUG]   (s) perCoreThreadCount = true
+[DEBUG]   (s) pluginArtifactMap = {org.apache.maven.plugins:maven-surefire-plugin=org.apache.maven.plugins:maven-surefire-plugin:maven-plugin:2.12.4:, org.apache.maven:maven-plugin-api=org.apache.maven:maven-plugin-api:jar:2.0.9:compile, org.apache.maven.surefire:surefire-booter=org.apache.maven.surefire:surefire-booter:jar:2.12.4:compile, org.apache.maven.surefire:surefire-api=org.apache.maven.surefire:surefire-api:jar:2.12.4:compile, org.apache.maven.surefire:maven-surefire-common=org.apache.maven.surefire:maven-surefire-common:jar:2.12.4:compile, org.apache.commons:commons-lang3=org.apache.commons:commons-lang3:jar:3.1:compile, org.apache.maven.shared:maven-common-artifact-filters=org.apache.maven.shared:maven-common-artifact-filters:jar:1.3:compile, org.codehaus.plexus:plexus-utils=org.codehaus.plexus:plexus-utils:jar:3.0.8:compile, org.apache.maven:maven-artifact=org.apache.maven:maven-artifact:jar:2.0.9:compile, org.apache.maven:maven-project=org.apache.maven:maven-project:jar:2.0.9:compile, org.apache.maven:maven-settings=org.apache.maven:maven-settings:jar:2.0.9:compile, org.apache.maven:maven-profile=org.apache.maven:maven-profile:jar:2.0.9:compile, org.apache.maven:maven-model=org.apache.maven:maven-model:jar:2.0.9:compile, org.apache.maven:maven-artifact-manager=org.apache.maven:maven-artifact-manager:jar:2.0.9:compile, org.apache.maven:maven-plugin-registry=org.apache.maven:maven-plugin-registry:jar:2.0.9:compile, org.codehaus.plexus:plexus-container-default=org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile, org.apache.maven:maven-core=org.apache.maven:maven-core:jar:2.0.9:compile, org.apache.maven:maven-plugin-parameter-documenter=org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.9:compile, org.apache.maven.reporting:maven-reporting-api=org.apache.maven.reporting:maven-reporting-api:jar:2.0.9:compile, org.apache.maven:maven-repository-metadata=org.apache.maven:maven-repository-metadata:jar:2.0.9:compile, org.apache.maven:maven-error-diagnostics=org.apache.maven:maven-error-diagnostics:jar:2.0.9:compile, org.apache.maven:maven-plugin-descriptor=org.apache.maven:maven-plugin-descriptor:jar:2.0.9:compile, org.apache.maven:maven-monitor=org.apache.maven:maven-monitor:jar:2.0.9:compile, classworlds:classworlds=classworlds:classworlds:jar:1.1:compile, org.apache.maven:maven-toolchain=org.apache.maven:maven-toolchain:jar:2.0.9:compile, org.apache.maven.plugin-tools:maven-plugin-annotations=org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.1:compile}
+[DEBUG]   (f) pluginDescriptor = Component Descriptor: role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.HelpMojo', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:help'
+role: 'org.apache.maven.plugin.Mojo', implementation: 'org.apache.maven.plugin.surefire.SurefirePlugin', role hint: 'org.apache.maven.plugins:maven-surefire-plugin:2.12.4:test'
+---
+[DEBUG]   (s) printSummary = true
+[DEBUG]   (s) projectArtifactMap = {net.sf.bluecove:bluecove-gpl-arm=net.sf.bluecove:bluecove-gpl-arm:jar:2.1.1-SNAPSHOT:compile, net.sf.bluecove:bluecove-gpl=net.sf.bluecove:bluecove-gpl:jar:2.1.1-SNAPSHOT:compile, org.slf4j:slf4j-api=org.slf4j:slf4j-api:jar:1.7.21:compile}
+[DEBUG]   (s) redirectTestOutputToFile = false
+[DEBUG]   (s) remoteRepositories = [      id: central
+      url: https://repo.maven.apache.org/maven2
+   layout: default
+snapshots: [enabled => false, update => daily]
+ releases: [enabled => true, update => never]
+]
+[DEBUG]   (s) reportFormat = brief
+[DEBUG]   (s) reportsDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/surefire-reports
+[DEBUG]   (s) runOrder = filesystem
+[DEBUG]   (s) skip = false
+[DEBUG]   (s) skipTests = false
+[DEBUG]   (s) testClassesDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/test-classes
+[DEBUG]   (s) testFailureIgnore = false
+[DEBUG]   (s) testNGArtifactName = org.testng:testng
+[DEBUG]   (s) testSourceDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/test/java
+[DEBUG]   (s) trimStackTrace = true
+[DEBUG]   (s) useFile = true
+[DEBUG]   (s) useManifestOnlyJar = true
+[DEBUG]   (s) useSystemClassLoader = true
+[DEBUG]   (s) useUnlimitedThreads = false
+[DEBUG]   (s) workingDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth
+[DEBUG]   (s) project = MavenProject: com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT @ /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (s) session = org.apache.maven.execution.MavenSession@232e55
+[DEBUG] -- end configuration --
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ mindwave-bluetooth ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=1, ConflictMarker.nodeCount=74, ConflictIdSorter.graphTime=0, ConflictIdSorter.topsortTime=1, ConflictIdSorter.conflictIdCount=28, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=4, ConflictResolver.conflictItemCount=70, DefaultDependencyCollector.collectTime=70, DefaultDependencyCollector.transformTime=7}
+[DEBUG] org.apache.maven.plugins:maven-jar-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:runtime
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-archiver:jar:2.5:compile
+[DEBUG]       org.apache.maven:maven-core:jar:2.0.6:compile
+[DEBUG]          org.apache.maven:maven-plugin-parameter-documenter:jar:2.0.6:compile
+[DEBUG]          org.apache.maven.reporting:maven-reporting-api:jar:2.0.6:compile
+[DEBUG]             org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7:compile
+[DEBUG]          org.apache.maven:maven-error-diagnostics:jar:2.0.6:compile
+[DEBUG]          commons-cli:commons-cli:jar:1.0:compile
+[DEBUG]          org.apache.maven:maven-plugin-descriptor:jar:2.0.6:compile
+[DEBUG]          org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4:compile
+[DEBUG]          org.apache.maven:maven-monitor:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-interpolation:jar:1.15:compile
+[DEBUG]    org.codehaus.plexus:plexus-archiver:jar:2.1:compile
+[DEBUG]       org.codehaus.plexus:plexus-io:jar:2.0.2:compile
+[DEBUG]    commons-lang:commons-lang:jar:2.1:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-jar-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-jar-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.apache.maven:maven-archiver:jar:2.5
+[DEBUG]   Included: org.apache.maven.reporting:maven-reporting-api:jar:2.0.6
+[DEBUG]   Included: org.apache.maven.doxia:doxia-sink-api:jar:1.0-alpha-7
+[DEBUG]   Included: commons-cli:commons-cli:jar:1.0
+[DEBUG]   Included: org.codehaus.plexus:plexus-interactivity-api:jar:1.0-alpha-4
+[DEBUG]   Included: org.codehaus.plexus:plexus-interpolation:jar:1.15
+[DEBUG]   Included: org.codehaus.plexus:plexus-archiver:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-io:jar:2.0.2
+[DEBUG]   Included: commons-lang:commons-lang:jar:2.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-jar-plugin:2.4:jar from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-jar-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-jar-plugin:2.4:jar' with basic configurator -->
+[DEBUG]   (f) classesDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes
+[DEBUG]   (f) defaultManifestFile = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/classes/META-INF/MANIFEST.MF
+[DEBUG]   (f) finalName = mindwave-bluetooth-0.0.1-SNAPSHOT
+[DEBUG]   (f) forceCreation = false
+[DEBUG]   (f) outputDirectory = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target
+[DEBUG]   (f) project = MavenProject: com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT @ /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@232e55
+[DEBUG]   (f) skipIfEmpty = false
+[DEBUG]   (f) useDefaultManifestFile = false
+[DEBUG] -- end configuration --
+[DEBUG] isUp2date: false (Destination /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/mindwave-bluetooth-0.0.1-SNAPSHOT.jar not found.)
+[INFO] Building jar: /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/mindwave-bluetooth-0.0.1-SNAPSHOT.jar
+[DEBUG] adding directory META-INF/
+[DEBUG] adding entry META-INF/MANIFEST.MF
+[DEBUG] adding directory com/
+[DEBUG] adding directory com/sperkins/
+[DEBUG] adding directory com/sperkins/mindwave/
+[DEBUG] adding directory com/sperkins/mindwave/event/
+[DEBUG] adding directory com/sperkins/mindwave/socket/
+[DEBUG] adding directory main/
+[DEBUG] adding directory main/resources/
+[DEBUG] adding entry com/sperkins/mindwave/Util.class
+[DEBUG] adding entry com/sperkins/mindwave/event/AbstractEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/AttentionEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/MeditationEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/Event.class
+[DEBUG] adding entry com/sperkins/mindwave/event/PoorSignalEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/EegEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/MindwaveEventListener.class
+[DEBUG] adding entry com/sperkins/mindwave/event/HeadsetStatusEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/RawEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/BlinkEvent.class
+[DEBUG] adding entry com/sperkins/mindwave/event/EventType.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/BluetoothConnection.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/BluetoothConnector.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/BluetoothSocket$BluetoothStreamParseThread.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/BluetoothConnector$BluetoothDeviceDiscoveryListener.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/MindwaveSerialPacket.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/BluetoothServiceUuids.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/BluetoothSocket.class
+[DEBUG] adding entry com/sperkins/mindwave/socket/MindwaveSerialPacket$1.class
+[DEBUG] adding entry main/resources/log4j.properties
+[DEBUG] adding directory META-INF/maven/
+[DEBUG] adding directory META-INF/maven/com.sperkins.mindwave/
+[DEBUG] adding directory META-INF/maven/com.sperkins.mindwave/mindwave-bluetooth/
+[DEBUG] adding entry META-INF/maven/com.sperkins.mindwave/mindwave-bluetooth/pom.xml
+[DEBUG] adding entry META-INF/maven/com.sperkins.mindwave/mindwave-bluetooth/pom.properties
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ mindwave-bluetooth ---
+[DEBUG] Dependency collection stats: {ConflictMarker.analyzeTime=1, ConflictMarker.markTime=0, ConflictMarker.nodeCount=38, ConflictIdSorter.graphTime=1, ConflictIdSorter.topsortTime=0, ConflictIdSorter.conflictIdCount=15, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=16, ConflictResolver.conflictItemCount=35, DefaultDependencyCollector.collectTime=42, DefaultDependencyCollector.transformTime=18}
+[DEBUG] org.apache.maven.plugins:maven-install-plugin:jar:2.4:
+[DEBUG]    org.apache.maven:maven-plugin-api:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-project:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-settings:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-profile:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-plugin-registry:jar:2.0.6:compile
+[DEBUG]       org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:compile
+[DEBUG]          junit:junit:jar:3.8.1:compile
+[DEBUG]          classworlds:classworlds:jar:1.1-alpha-2:compile
+[DEBUG]    org.apache.maven:maven-model:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact-manager:jar:2.0.6:compile
+[DEBUG]       org.apache.maven:maven-repository-metadata:jar:2.0.6:compile
+[DEBUG]    org.apache.maven:maven-artifact:jar:2.0.6:compile
+[DEBUG]    org.codehaus.plexus:plexus-utils:jar:3.0.5:compile
+[DEBUG]    org.codehaus.plexus:plexus-digest:jar:1.0:compile
+[DEBUG] Created new class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG] Importing foreign packages into class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG]   Imported:  < maven.api
+[DEBUG] Populating class realm plugin>org.apache.maven.plugins:maven-install-plugin:2.4
+[DEBUG]   Included: org.apache.maven.plugins:maven-install-plugin:jar:2.4
+[DEBUG]   Included: junit:junit:jar:3.8.1
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.0.5
+[DEBUG]   Included: org.codehaus.plexus:plexus-digest:jar:1.0
+[DEBUG] Configuring mojo org.apache.maven.plugins:maven-install-plugin:2.4:install from plugin realm ClassRealm[plugin>org.apache.maven.plugins:maven-install-plugin:2.4, parent: sun.misc.Launcher$AppClassLoader@10dea4e]
+[DEBUG] Configuring mojo 'org.apache.maven.plugins:maven-install-plugin:2.4:install' with basic configurator -->
+[DEBUG]   (f) artifact = com.sperkins.mindwave:mindwave-bluetooth:jar:0.0.1-SNAPSHOT
+[DEBUG]   (f) attachedArtifacts = []
+[DEBUG]   (f) createChecksum = false
+[DEBUG]   (f) localRepository =       id: local
+      url: file:///home/pi/.m2/repository/
+   layout: default
+snapshots: [enabled => true, update => always]
+ releases: [enabled => true, update => always]
+
+[DEBUG]   (f) packaging = jar
+[DEBUG]   (f) pomFile = /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml
+[DEBUG]   (s) skip = false
+[DEBUG]   (f) updateReleaseInfo = false
+[DEBUG] -- end configuration --
+[INFO] Installing /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/target/mindwave-bluetooth-0.0.1-SNAPSHOT.jar to /home/pi/.m2/repository/com/sperkins/mindwave/mindwave-bluetooth/0.0.1-SNAPSHOT/mindwave-bluetooth-0.0.1-SNAPSHOT.jar
+[DEBUG] Writing tracking file /home/pi/.m2/repository/com/sperkins/mindwave/mindwave-bluetooth/0.0.1-SNAPSHOT/_remote.repositories
+[INFO] Installing /home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/pom.xml to /home/pi/.m2/repository/com/sperkins/mindwave/mindwave-bluetooth/0.0.1-SNAPSHOT/mindwave-bluetooth-0.0.1-SNAPSHOT.pom
+[DEBUG] Writing tracking file /home/pi/.m2/repository/com/sperkins/mindwave/mindwave-bluetooth/0.0.1-SNAPSHOT/_remote.repositories
+[DEBUG] Installing com.sperkins.mindwave:mindwave-bluetooth:0.0.1-SNAPSHOT/maven-metadata.xml to /home/pi/.m2/repository/com/sperkins/mindwave/mindwave-bluetooth/0.0.1-SNAPSHOT/maven-metadata-local.xml
+[DEBUG] Installing com.sperkins.mindwave:mindwave-bluetooth/maven-metadata.xml to /home/pi/.m2/repository/com/sperkins/mindwave/mindwave-bluetooth/maven-metadata-local.xml
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 8.931 s
+[INFO] Finished at: 2016-09-26T09:04:12-05:00
+[INFO] Final Memory: 11M/28M
+[INFO] ------------------------------------------------------------------------

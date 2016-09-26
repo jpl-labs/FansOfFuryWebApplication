@@ -1,0 +1,400 @@
+*************************************************************************** 
+
+%%The following software may be included in this product: 
+SAX 
+
+Use of any of this software is governed by the terms of the license below: 
+
+There is not a license - it is in the public domain 
+
+Copyright Disclaimers 
+
+This page includes statements to that effect by David Megginson, who would have 
+been able to claim copyright for the original work. 
+
+SAX 1.0 
+
+Version 1.0 of the Simple API for XML (SAX), created collectively by the 
+membership of the XML-DEV mailing list, is hereby released into the public 
+domain. 
+
+No one owns SAX: you may use it freely in both commercial and non-commercial 
+applications, bundle it with your software distribution, include it on a CD-ROM, 
+list the source code in a book, mirror the documentation at your own web site, 
+or use it in any other way you see fit. 
+
+SAX 2.0 
+
+I hereby abandon any property rights to SAX 2.0 (the Simple API for XML), and 
+release all of the SAX 2.0 source code, compiled code, and documentation 
+contained in this distribution into the Public Domain. SAX comes with NO 
+WARRANTY or guarantee of fitness for any purpose. 
+
+                           David Megginson, david@megginson.com 
+                           2000-05-05 
+
+Additional License(s) 
+
+Public domain software 
+
+*************************************************************************** 
+
+%The following software may be included in this product for Stax utils: 
+StAX utils
+
+Copyright (c) 2004, Christian Niles, unit12.net 
+
+ Copyright (c) 2004, Sun Microsystems, Inc. 
+
+ Copyright (c) 2006, John Kristian 
+
+ All rights reserved. 
+
+
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met: 
+
+    * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer. 
+    * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution. 
+    * Neither the name of the listed copyright holders nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission. 
+
+           THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+           A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, 
+           DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.  
+
+*************************************************************************** 
+
+%%The following software may be included in this product: 
+JSON
+
+Copyright (c) 2002 JSON.org
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+The Software shall be used for Good, not Evil.
+
+*************************************************************************** 
+
+%%The following software may be included in this product: 
+JPEG 
+
+Use of any of this software is governed by the terms of the license below: 
+
+Taken from code...... 
+
+LEGAL ISSUES 
+============ 
+
+In plain English: 
+
+1. We don't promise that this software works.  (But if you find any bugs, 
+   please let us know!) 
+2. You can use this software for whatever you want.  You don't have to pay us. 
+3. You may not pretend that you wrote this software.  If you use it in a 
+   program, you must acknowledge somewhere in your documentation that 
+   you've used the IJG code. 
+
+In legalese: 
+
+The authors make NO WARRANTY or representation, either express or implied, 
+with respect to this software, its quality, accuracy, merchantability, or 
+fitness for a particular purpose.  This software is provided "AS IS", and you, 
+its user, assume the entire risk as to its quality and accuracy. 
+
+This software is copyright (C) 1991-1998, Thomas G. Lane. 
+All Rights Reserved except as specified below. 
+
+Permission is hereby granted to use, copy, modify, and distribute this 
+software (or portions thereof) for any purpose, without fee, subject to these 
+conditions: 
+(1) If any part of the source code for this software is distributed, then this 
+README file must be included, with this copyright and no-warranty notice 
+unaltered; and any additions, deletions, or changes to the original files 
+must be clearly indicated in accompanying documentation. 
+(2) If only executable code is distributed, then the accompanying 
+documentation must state that "this software is based in part on the work of 
+the Independent JPEG Group". 
+(3) Permission for use of this software is granted only if the user accepts 
+full responsibility for any undesirable consequences; the authors accept 
+NO LIABILITY for damages of any kind. 
+
+These conditions apply to any software derived from or based on the IJG code, 
+not just to the unmodified library.  If you use our work, you ought to 
+acknowledge us. 
+
+Permission is NOT granted for the use of any IJG author's name or company name 
+in advertising or publicity relating to this software or products derived from 
+it.  This software may be referred to only as "the Independent JPEG Group's 
+software". 
+
+We specifically permit and encourage the use of this software as the basis of 
+commercial products, provided that all warranty or liability claims are 
+assumed by the product vendor. 
+
+ansi2knr.c is included in this distribution by permission of L. Peter Deutsch, 
+sole proprietor of its copyright holder, Aladdin Enterprises of Menlo Park, CA. 
+ansi2knr.c is NOT covered by the above copyright and conditions, but instead 
+by the usual distribution terms of the Free Software Foundation; principally, 
+that you must include source code if you redistribute it.  (See the file 
+ansi2knr.c for full details.)  However, since ansi2knr.c is not needed as part 
+of any program generated from the IJG code, this does not limit you more than 
+the foregoing paragraphs do. 
+
+The Unix configuration script "configure" was produced with GNU Autoconf. 
+It is copyright by the Free Software Foundation but is freely distributable. 
+The same holds for its supporting scripts (config.guess, config.sub, 
+ltconfig, ltmain.sh).  Another support script, install-sh, is copyright 
+by M.I.T. but is also freely distributable. 
+
+It appears that the arithmetic coding option of the JPEG spec is covered by 
+patents owned by IBM, AT&T, and Mitsubishi.  Hence arithmetic coding cannot 
+legally be used without obtaining one or more licenses.  For this reason, 
+support for arithmetic coding has been removed from the free JPEG software. 
+(Since arithmetic coding provides only a marginal gain over the unpatented 
+Huffman mode, it is unlikely that very many implementations will support it.) 
+So far as we are aware, there are no patent restrictions on the remaining 
+code. 
+
+The IJG distribution formerly included code to read and write GIF files. 
+To avoid entanglement with the Unisys LZW patent, GIF reading support has 
+been removed altogether, and the GIF writer has been simplified to produce 
+"uncompressed GIFs".  This technique does not use the LZW algorithm; the 
+resulting GIF files are larger than usual, but are readable by all standard 
+GIF decoders. 
+
+We are required to state that 
+    "The Graphics Interchange Format(c) is the Copyright property of 
+    CompuServe Incorporated.  GIF(sm) is a Service Mark property of 
+    CompuServe Incorporated." 
+
+*************************************************************************** 
+
+%%The following software may be included in this product: 
+W3C DOM
+
+W3C Document License 
+
+License 
+
+By using and/or copying this document, or the W3C document from which this statement is linked, you (the licensee) agree that you have read, understood, and will comply with the following terms and conditions: 
+
+Permission to copy, and distribute the contents of this document, or the W3C document from which this statement is linked, in any medium for any purpose and without fee or royalty is hereby granted, provided that you include the following on ALL copies of the document, or portions thereof, that you use: 
+
+A link or URL to the original W3C document. 
+
+The pre-existing copyright notice of the original author, or if it doesn't exist, a notice (hypertext is preferred, but a textual representation is permitted) of the form: "Copyright ? [$date-of-document] World Wide Web Consortium, (Massachusetts Institute of Technology, European Research Consortium for Informatics and Mathematics, Keio University). All Rights Reserved. http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231" 
+
+If it exists, the STATUS of the W3C document. 
+
+When space permits, inclusion of the full text of this NOTICE should be provided. We request that authorship attribution be provided in any software, documents, or other items or products that you create pursuant to the implementation of the contents of this document, or any portion thereof. 
+
+No right to create modifications or derivatives of W3C documents is granted pursuant to this license. However, if additional requirements (documented in the Copyright FAQ) are satisfied, the right to create modifications or derivatives is sometimes granted by the W3C to individuals complying with those requirements. 
+Disclaimers 
+
+THIS DOCUMENT IS PROVIDED "AS IS," AND COPYRIGHT HOLDERS MAKE NO REPRESENTATIONS OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT, OR TITLE; THAT THE CONTENTS OF THE DOCUMENT ARE SUITABLE FOR ANY PURPOSE; NOR THAT THE IMPLEMENTATION OF SUCH CONTENTS WILL NOT INFRINGE ANY THIRD PARTY PATENTS, COPYRIGHTS, TRADEMARKS OR OTHER RIGHTS. 
+
+COPYRIGHT HOLDERS WILL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF ANY USE OF THE DOCUMENT OR THE PERFORMANCE OR IMPLEMENTATION OF THE CONTENTS THEREOF. 
+
+The name and trademarks of copyright holders may NOT be used in advertising or publicity pertaining to this document or its contents without specific, written prior permission. Title to copyright in this document will at all times remain with copyright holders. 
+Notes 
+
+This version: http://www.w3.org/Consortium/Legal/2002/copyright-documents-20021231 
+
+This formulation of W3C's notice and license became active on December 31 2002. This version removes the copyright ownership notice such that this license can be used with materials other than those owned by the W3C, moves information on style sheets, DTDs, and schemas to the Copyright FAQ, reflects that ERCIM is now a host of the W3C, includes references to this specific dated version of the license, and removes the ambiguous grant of "use". See the older formulation for the policy prior to this date. Please see our Copyright FAQ for common questions about using materials from our site, such as the translating or annotating specifications.? 
+
+ 
+*************************************************************************** 
+
+%%The following software may be included in this product: 
+ASM 
+
+Copyright (c) 2000-2005 INRIA, France Telecom 
+ All rights reserved. 
+
+ Redistribution and use in source and binary forms, with or without 
+ modification, are permitted provided that the following conditions 
+ are met: 
+ 1. Redistributions of source code must retain the above copyright 
+    notice, this list of conditions and the following disclaimer. 
+ 2. Redistributions in binary form must reproduce the above copyright 
+    notice, this list of conditions and the following disclaimer in the 
+    documentation and/or other materials provided with the distribution. 
+ 3. Neither the name of the copyright holders nor the names of its 
+    contributors may be used to endorse or promote products derived from 
+    this software without specific prior written permission. 
+
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" 
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE 
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE 
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE 
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR 
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF 
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS 
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN 
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF 
+ THE POSSIBILITY OF SUCH DAMAGE. 
+
+*************************************************************************** 
+
+%%The following software may be included in this product: 
+OpenSSL
+
+Use of any of this software is governed by the terms of the license below: 
+
+OpenSSL License 
+The OpenSSL toolkit stays under a dual license, i.e. both the conditions of
+the OpenSSL License and the original SSLeay license apply to the toolkit.
+See below for the actual license texts. Actually both licenses are BSD-style
+Open Source licenses. In case of any license issues related to OpenSSL
+please contact openssl-core@openssl.org.
+
+  OpenSSL License
+  ---------------
+
+/* ====================================================================
+ * Copyright (c) 1998-2011 The OpenSSL Project.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ *
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ *
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in
+ *    the documentation and/or other materials provided with the
+ *    distribution.
+ *
+ * 3. All advertising materials mentioning features or use of this
+ *    software must display the following acknowledgment:
+ *    "This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit. (http://www.openssl.org/)"
+ *
+ * 4. The names "OpenSSL Toolkit" and "OpenSSL Project" must not be used to
+ *    endorse or promote products derived from this software without
+ *    prior written permission. For written permission, please contact
+ *    openssl-core@openssl.org.
+ *
+ * 5. Products derived from this software may not be called "OpenSSL"
+ *    nor may "OpenSSL" appear in their names without prior written
+ *    permission of the OpenSSL Project.
+ *
+ * 6. Redistributions of any form whatsoever must retain the following
+ *    acknowledgment:
+ *    "This product includes software developed by the OpenSSL Project
+ *    for use in the OpenSSL Toolkit (http://www.openssl.org/)"
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE OpenSSL PROJECT ``AS IS'' AND ANY
+ * EXPRESSED OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+ * PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE OpenSSL PROJECT OR
+ * ITS CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+ * SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ * NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ * OF THE POSSIBILITY OF SUCH DAMAGE.
+ * ====================================================================
+ *
+ * This product includes cryptographic software written by Eric Young
+ * (eay@cryptsoft.com).  This product includes software written by Tim
+ * Hudson (tjh@cryptsoft.com).
+ *
+ */
+
+ Original SSLeay License
+ -----------------------
+
+/* Copyright (C) 1995-1998 Eric Young (eay@cryptsoft.com)
+ * All rights reserved.
+ *
+ * This package is an SSL implementation written
+ * by Eric Young (eay@cryptsoft.com).
+ * The implementation was written so as to conform with Netscapes SSL.
+ *
+ * This library is free for commercial and non-commercial use as long as
+ * the following conditions are aheared to.  The following conditions
+ * apply to all code found in this distribution, be it the RC4, RSA,
+ * lhash, DES, etc., code; not just the SSL code.  The SSL documentation
+ * included with this distribution is covered by the same copyright terms
+ * except that the holder is Tim Hudson (tjh@cryptsoft.com).
+ *
+ * Copyright remains Eric Young's, and as such any Copyright notices in
+ * the code are not to be removed.
+ * If this package is used in a product, Eric Young should be given attribution
+ * as the author of the parts of the library used.
+ * This can be in the form of a textual message at program startup or
+ * in documentation (online or textual) provided with the package.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ *    "This product includes cryptographic software written by
+ *     Eric Young (eay@cryptsoft.com)"
+ *    The word 'cryptographic' can be left out if the rouines from the library
+ *    being used are not cryptographic related .
+ * 4. If you include any Windows specific code (or a derivative thereof) from
+ *    the apps directory (application code) you must include an acknowledgement:
+ *    "This product includes software written by Tim Hudson (tjh@cryptsoft.com)"
+ *
+ * THIS SOFTWARE IS PROVIDED BY ERIC YOUNG ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ *
+ * The licence and distribution terms for any publically available version or
+ * derivative of this code cannot be changed.  i.e. this code cannot simply be
+ * copied and put under another distribution licence
+ * [including the GNU Public Licence.]
+ */
+
+Additional License(s) 
+
+RSA Data Security, Inc. Message Digest License 
+Copyright (C) 1991-2, RSA Data Security, Inc. Created 1991. 
+All rights reserved. 
+License to copy and use this software is granted provided that it is 
+identified as the "RSA Data Security, Inc. MD4 Message-Digest 
+Algorithm" in all material mentioning or referencing this software or 
+this function. 
+License is also granted to make and use derivative works provided that 
+such works are identified as "derived from the RSA Data Security, Inc. 
+MD4 Message-Digest Algorithm" in all material mentioning or 
+referencing the derived work. 
+RSA Data Security, Inc. makes no representations concerning either the 
+merchantability of this software or the suitability of this software 
+for any particular purpose. It is provided "as is" without express or 
+implied warranty of any kind. 
+These notices must be retained in any copies of any part of this 
+documentation and/or software. 
+
+MD5 License 
+"THE BEER-WARE LICENSE" (Revision 42): 
+<phk@FreeBSD.ORG> wrote this file.  As long as you retain this 
+notice you can do whatever you want with this stuff. If we meet some 
+day, and you think this stuff is worth it, you can buy me a beer in 
+return.   Poul-Henning Kamp 
+
+
+*************************************************************************** 
+END.
+

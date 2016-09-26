@@ -1,0 +1,17 @@
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/BlinkEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/PoorSignalEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothServiceUuids.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/MindwaveSerialPacket.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/AttentionEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/MindwaveEventListener.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothConnection.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/AbstractEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/EventType.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/EegEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/RawEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/Util.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/HeadsetStatusEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/MeditationEvent.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/event/Event.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothConnector.java
+/home/pi/projects/fof/latest-spring-app/mindwave-bluetooth/src/com/sperkins/mindwave/socket/BluetoothSocket.java
